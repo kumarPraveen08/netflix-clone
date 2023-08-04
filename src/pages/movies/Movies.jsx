@@ -1,9 +1,10 @@
 import Card from "components/card/Card";
 import "./movies.scss";
-import { fetchTrendingMovies, fetchUpcomingMovies, movieGenre } from "api/Api";
+import { fetchTrendingMovies, fetchUpcomingMovies } from "api/Api";
 import Category from "components/category/Category";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { movieGenre } from "constants";
 
 export default function Movies() {
   const [trending, setTrending] = useState();

@@ -1,9 +1,10 @@
-import Card from "components/card/Card";
 import "./series.scss";
-import { fetchTrendingSeries, fetchUpcomingSeries, movieGenre } from "api/Api";
-import Category from "components/category/Category";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { seriesGenre } from "constants";
+import { fetchTrendingSeries, fetchUpcomingSeries } from "api/Api";
+import Card from "components/card/Card";
+import Category from "components/category/Category";
 
 export default function Movies() {
   const [trending, setTrending] = useState();
@@ -69,7 +70,7 @@ export default function Movies() {
             )}
           </div>
         </div>
-        {movieGenre.map((item) => (
+        {seriesGenre.map((item) => (
           <Category title={`${item?.name} Series`} id={item?.id} />
         ))}
       </div>
