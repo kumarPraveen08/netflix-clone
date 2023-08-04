@@ -1,0 +1,109 @@
+.series {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .banner {
+    .bannerImg {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    .seriesDetails {
+      position: absolute;
+      left: 50px;
+      top: 0;
+      margin-top: 400px;
+      .title {
+        font-size: 40px;
+        font-weight: 800;
+      }
+      .seriesMeta {
+        a {
+          text-decoration: none;
+        }
+      }
+      .seriesDesc {
+      }
+      .seriesStar {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+  .videos {
+    text-align: center;
+    .videoCollection {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      .video {
+      }
+    }
+  }
+  .episodes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .h2 {
+    }
+    select {
+      width: fit-content;
+      font-size: 18px;
+      padding: 4px;
+    }
+  }
+  .cast {
+    span {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .collection {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 20px;
+      .castName {
+        min-width: 300px;
+        line-height: 0.3;
+      }
+    }
+  }
+  .related {
+    .collection {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .upcoming {
+    .collection {
+      display: flex;
+      // align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      .upcomingMovie {
+        max-width: 300px;
+        .title {
+          text-decoration: underline;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 0.2;
+          cursor: pointer;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

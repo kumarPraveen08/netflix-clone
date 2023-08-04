@@ -1,0 +1,36 @@
+footer {
+  margin-top: 40px;
+  padding: 100px;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: gray;
+  .container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 300px;
+    }
+    span {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  select {
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.5);
+    option {
+      margin: 10px;
+    }
+  }
+}

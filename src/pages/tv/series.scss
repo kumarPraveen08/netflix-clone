@@ -1,0 +1,11 @@
+.series {
+  h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .movieCollection {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
